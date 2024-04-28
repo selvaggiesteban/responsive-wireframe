@@ -41,6 +41,12 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
     />
+    <!-- Fancybox -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
   </head>
   <body>
     <!-- Responsive header -->
@@ -319,6 +325,53 @@
         </div>
       </div>
     </div>
+    <!-- Responsive fancybox gallery -->
+    <div class="container-fluid responsive-fancybox-gallery">
+      <div class="row no-gutters">
+        <h2>Title might be placed here</h2>
+
+        <div class="col-6 col-lg-3 showcase">
+          <a
+            href="assets/img/default.webp"
+            class="fancybox"
+            data-fancybox="gallery-1"
+            data-caption="You can add some descriptive text too."
+          >
+            <img src="assets/img/default.webp" width="100%" height="100%" />
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 showcase">
+          <a
+            href="assets/img/default.webp"
+            class="fancybox"
+            data-fancybox="gallery-1"
+            data-caption="You can add some descriptive text too."
+          >
+            <img src="assets/img/default.webp" width="100%" height="100%" />
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 showcase">
+          <a
+            href="assets/img/default.webp"
+            class="fancybox"
+            data-fancybox="gallery-1"
+            data-caption="You can add some descriptive text too."
+          >
+            <img src="assets/img/default.webp" width="100%" height="100%" />
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 showcase">
+          <a
+            href="assets/img/default.webp"
+            class="fancybox"
+            data-fancybox="gallery-1"
+            data-caption="You can add some descriptive text too."
+          >
+            <img src="assets/img/default.webp" width="100%" height="100%" />
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- Clients -->
     <div class="container-fluid clients">
       <h2>Title might be placed here</h2>
@@ -332,8 +385,8 @@
       </div>
     </div>
     <!-- Banner -->
-    <div class="container-fluid banner">
-      <div class="row no-gutters">
+    <div class="container-fluid banner-wrapper">
+      <div class="row no-gutters banner">
         <div class="col-sm-12">
           <h2>Title might be placed here</h2>
           <p>Description might be placed here</p>
@@ -608,5 +661,11 @@
         ],
       });
     </script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Floating WhatsApp button -->
+    <script src="assets/js/floatingwhatsapp.js"></script>
+    <script src="assets/js/wabutton.js"></script>
+    <div id="WAButton"></div>
   </body>
 </html>
