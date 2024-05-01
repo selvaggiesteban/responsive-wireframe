@@ -18,9 +18,12 @@ h2 {
   text-transform: none;
   line-height: 1.5rem;
   background: #fff;
+  color: #000;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
   padding: 18px 36px;
+  margin: 50px 0 0 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .cta-secundary {
@@ -30,9 +33,12 @@ h2 {
   text-transform: none;
   line-height: 1.5rem;
   background: #fff;
+  color: #000;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
   padding: 18px 36px;
+  margin: 50px 0 0 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .cta-tertiary {
@@ -217,6 +223,52 @@ nav .container-fluid {
     height: 56px;
     width: 56px;
   }
+}
+/* Hero with form */
+.hero-with-form {
+  padding: 100px 10% !important;
+  background: linear-gradient(
+      180deg,
+      rgba(100, 100, 100, 0.3) 0%,
+      rgba(100, 100, 100, 0.2) 80%,
+      rgba(100, 100, 100, 0.1) 100%
+    ),
+    url("../img/default.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-with-form h2 {
+  margin: 0 0 50px 0;
+}
+.hero-with-form form {
+  max-width: 800px;
+}
+.hero-with-form .field {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0px;
+  border: none;
+}
+.hero-with-form input[type="radio"] {
+  height: 10px;
+  width: 10px;
+  padding: 20px 0;
+  margin: 0 10px 0 0;
+}
+.hero-with-form label {
+  margin: 0 14px 0 0;
+}
+.hero-with-form textarea {
+  min-height: 150px;
+}
+.hero-with-form input[type="submit"] {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 /* Text */
 .text {
@@ -506,7 +558,15 @@ nav .container-fluid {
 }
 /* Banner */
 .banner-wrapper {
-  background: #ccc;
+  background: linear-gradient(
+      180deg,
+      rgba(100, 100, 100, 0.3) 0%,
+      rgba(100, 100, 100, 0.2) 80%,
+      rgba(100, 100, 100, 0.1) 100%
+    ),
+    url("../img/default.webp");
+  background-position: center;
+  background-size: cover;
 }
 .banner {
   padding: 100px 10% !important;
@@ -519,6 +579,9 @@ nav .container-fluid {
 .accordion h2 {
   text-align: center;
 }
+.accordion .accordion-header button {
+  font-size: 20px;
+}
 /* Breadcrumb */
 .breadcrumb-wrapper {
   padding: 100px 10% !important;
@@ -526,19 +589,41 @@ nav .container-fluid {
 .breadcrumb-wrapper nav {
   background: #fff;
 }
+.breadcrumb-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: none;
+  padding: 0 0;
+  margin: 0 0 50px 0;
+}
+.breadcrumb-item a {
+  color: #000;
+  text-decoration: none;
+}
 /* Contact form */
 .contact-form {
   padding: 100px 10% !important;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact-form h2 {
   text-align: center;
   margin: 0 0 50px 0;
 }
+.contact-form form {
+  max-width: 800px;
+}
 .contact-form form .field {
   width: 100%;
   padding: 20px;
-  margin: 5px 0px;
-  border: 1px solid #ccc;
+  margin: 10px 0px;
+  border: none;
 }
 .contact-form input[type="radio"] {
   height: 10px;
@@ -699,4 +784,29 @@ footer {
 .floating-wpp .floating-wpp-btn-send {
   font-size: 0;
   margin-left: 12px;
+}
+/* Back to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 60px;
+}
+#myBtn:hover {
+  background-color: #2d3740;
+}
+#myBtn i {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

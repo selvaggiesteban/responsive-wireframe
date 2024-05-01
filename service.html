@@ -117,136 +117,24 @@
         </form>
       </div>
     </nav>
-    <!-- Bootstrap carousel with rounded thumbnails -->
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-controls">
-        <ol class="carousel-indicators">
-          <li
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            style="background-image: url('assets/img/default.webp')"
-          ></li>
-          <li
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            style="background-image: url('assets/img/default.webp')"
-          ></li>
-          <li
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            style="background-image: url('assets/img/default.webp')"
-          ></li>
-        </ol>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="carousel-inner">
-        <div
-          class="carousel-item active"
-          style="background-image: url('assets/img/default.webp')"
-        >
-          <div class="container">
-            <h2>Title might be placed here</h2>
-            <p>Caption might be placed here</p>
-          </div>
-        </div>
-        <div
-          class="carousel-item"
-          style="background-image: url('assets/img/default.webp')"
-        >
-          <div class="container">
-            <h2>Title might be placed here</h2>
-            <p>Caption might be placed here</p>
-          </div>
-        </div>
-        <div
-          class="carousel-item"
-          style="background-image: url('assets/img/default.webp')"
-        >
-          <div class="container">
-            <h2>Title might be placed here</h2>
-            <p>Caption might be placed here</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Hero with form -->
-    <div class="container-fluid hero-with-form">
-      <div class="row no-gutters">
-        <div class="col-sm-12 col-lg-6">
+    <!-- Banner -->
+    <div class="container-fluid banner-wrapper">
+      <div class="row no-gutters banner">
+        <div class="col-sm-12">
+          <!-- Breadcrumb -->
+          <nav class="breadcrumb-navbar" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Library
+              </li>
+            </ol>
+          </nav>
           <h2>Title might be placed here</h2>
-          <p>Caption might be placed here</p>
-          <a href="#"
-            ><button class="cta-secundary" type="button">
-              Read more
-              <i class="far fa-arrow-alt-circle-right"></i></button
+          <p>Description might be placed here</p>
+          <a class="cta-secundary" href="#" target="_blank"
+            >Read more <i class="fa-solid fa-chevron-right"></i
           ></a>
-        </div>
-        <div class="col-sm-12 col-lg-6">
-          <form
-            action="assets/webmail.php"
-            method="post"
-            enctype="multipart/form-data"
-          >
-            <input
-              type="text"
-              name="name"
-              required
-              class="field"
-              placeholder="Names and surnames"
-            />
-            <input
-              type="text"
-              name="tel"
-              required
-              class="field"
-              placeholder="Phone number"
-            />
-            <div class="radio-inputs">
-              <input type="radio" name="category" /><label for="company"
-                >Company</label
-              >
-              <input type="radio" name="category" /><label for="professional"
-                >Professional</label
-              >
-            </div>
-            <input
-              type="text"
-              name="email"
-              required
-              class="field"
-              placeholder="E-mail"
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Write something"
-              class="field"
-            ></textarea>
-            <input type="file" name="Upload files[]" multiple />
-            <input type="submit" value="Submit" class="cta-primary" />
-          </form>
         </div>
       </div>
     </div>
@@ -290,86 +178,6 @@
         </div>
       </div>
     </div>
-    <!-- Services section -->
-    <div class="container-fluid services">
-      <h2>Title might be placed here</h2>
-      <div class="row no-gutters">
-        <div class="col-lg-3">
-          <div class="service service-1"></div>
-          <div class="description">
-            <h3>Title might be placed here</h3>
-            <p>Caption might be placed here</p>
-            <a href="#"
-              ><button class="cta-tertiary" type="button">
-                Read more
-                <i class="far fa-arrow-alt-circle-right"></i></button
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service service-2"></div>
-          <div class="description">
-            <h3>Title might be placed here</h3>
-            <p>Caption might be placed here</p>
-            <a href="#"
-              ><button class="cta-tertiary" type="button">
-                Read more
-                <i class="far fa-arrow-alt-circle-right"></i></button
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service service-3"></div>
-          <div class="description">
-            <h3>Title might be placed here</h3>
-            <p>Caption might be placed here</p>
-            <a href="#"
-              ><button class="cta-tertiary" type="button">
-                Read more
-                <i class="far fa-arrow-alt-circle-right"></i></button
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-3">
-          <div class="service service-4"></div>
-          <div class="description">
-            <h3>Title might be placed here</h3>
-            <p>Caption might be placed here</p>
-            <a href="#"
-              ><button class="cta-tertiary" type="button">
-                Read more
-                <i class="far fa-arrow-alt-circle-right"></i></button
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service service-5"></div>
-          <div class="description">
-            <h3>Title might be placed here</h3>
-            <p>Caption might be placed here</p>
-            <a href="#"
-              ><button class="cta-tertiary" type="button">
-                Read more
-                <i class="far fa-arrow-alt-circle-right"></i></button
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service service-6"></div>
-          <div class="description">
-            <h3>Title might be placed here</h3>
-            <p>Caption might be placed here</p>
-            <a href="#"
-              ><button class="cta-tertiary" type="button">
-                Read more
-                <i class="far fa-arrow-alt-circle-right"></i></button
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Text with image -->
     <div class="container-fluid text-with-image-wrapper">
       <div class="row no-gutters">
@@ -382,53 +190,6 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <img src="assets/img/default.webp" />
-        </div>
-      </div>
-    </div>
-    <!-- Responsive fancybox gallery -->
-    <div class="container-fluid responsive-fancybox-gallery">
-      <div class="row no-gutters">
-        <h2>Title might be placed here</h2>
-
-        <div class="col-6 col-lg-3 showcase">
-          <a
-            href="assets/img/default.webp"
-            class="fancybox"
-            data-fancybox="gallery-1"
-            data-caption="You can add some descriptive text too."
-          >
-            <img src="assets/img/default.webp" width="100%" height="100%" />
-          </a>
-        </div>
-        <div class="col-6 col-lg-3 showcase">
-          <a
-            href="assets/img/default.webp"
-            class="fancybox"
-            data-fancybox="gallery-1"
-            data-caption="You can add some descriptive text too."
-          >
-            <img src="assets/img/default.webp" width="100%" height="100%" />
-          </a>
-        </div>
-        <div class="col-6 col-lg-3 showcase">
-          <a
-            href="assets/img/default.webp"
-            class="fancybox"
-            data-fancybox="gallery-1"
-            data-caption="You can add some descriptive text too."
-          >
-            <img src="assets/img/default.webp" width="100%" height="100%" />
-          </a>
-        </div>
-        <div class="col-6 col-lg-3 showcase">
-          <a
-            href="assets/img/default.webp"
-            class="fancybox"
-            data-fancybox="gallery-1"
-            data-caption="You can add some descriptive text too."
-          >
-            <img src="assets/img/default.webp" width="100%" height="100%" />
-          </a>
         </div>
       </div>
     </div>
@@ -502,28 +263,18 @@
         </div>
       </div>
     </div>
-    <!-- Clients -->
-    <div class="container-fluid clients">
-      <h2>Title might be placed here</h2>
-      <div class="responsive-slick-carousel">
-        <a href="#" target="_blank"><img src="assets/img/default.webp" /></a>
-        <a href="#" target="_blank"><img src="assets/img/default.webp" /></a>
-        <a href="#" target="_blank"><img src="assets/img/default.webp" /></a>
-        <a href="#" target="_blank"><img src="assets/img/default.webp" /></a>
-        <a href="#" target="_blank"><img src="assets/img/default.webp" /></a>
-        <a href="#" target="_blank"><img src="assets/img/default.webp" /></a>
-      </div>
-    </div>
-    <!-- Banner -->
-    <div class="container-fluid banner-wrapper">
-      <div class="row no-gutters banner">
-        <div class="col-sm-12">
+    <!-- Text section -->
+    <div class="container-fluid text">
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-6">
           <h2>Title might be placed here</h2>
-          <p>Description might be placed here</p>
-          <a class="cta-secundary" href="#" target="_blank"
-            >Read more <i class="fa-solid fa-chevron-right"></i
+          <a href="#"
+            ><button class="cta-secundary" type="button">
+              Read more
+              <i class="far fa-arrow-alt-circle-right"></i></button
           ></a>
         </div>
+        <div class="col-12 col-lg-6"><p>Caption might be placed here</p></div>
       </div>
     </div>
     <!-- Accordion -->
@@ -622,29 +373,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Breadcrumb -->
-    <div class="container-fluid breadcrumb-wrapper">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
-      </nav>
-
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
-
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
     </div>
     <!-- Contact form -->
     <div class="container-fluid contact-form">
